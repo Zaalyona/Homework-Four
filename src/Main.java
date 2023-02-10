@@ -26,9 +26,10 @@ public class Main {
         int currentYear = 2021;
         int pastPeriod = currentYear - 200;
         int futurePeriod = currentYear + 100;
-        i = pastPeriod + 79;
-        for ( ; i < futurePeriod; i = i + 79) {
-            System.out.println(i);
+        for (i = pastPeriod ; i < futurePeriod; i++) {
+            if (i % 79 == 0) {
+                System.out.println(i);
+            }
         }
 
         //четвёртая
